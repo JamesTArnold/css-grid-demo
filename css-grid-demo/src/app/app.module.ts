@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { ExampleComponent } from './example/example.component';
 import { IntroComponent } from './intro/intro.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 import { examples } from './examples';
 
@@ -20,6 +21,7 @@ import { examples } from './examples';
     MainMenuComponent,
     ExampleComponent,
     IntroComponent,
+    ResourcesComponent,
 
   ],
   imports: [
