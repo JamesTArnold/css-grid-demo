@@ -9,7 +9,7 @@ import { examples } from './examples';
 
 const routes: Routes = [
   { path: '', redirectTo: 'intro', pathMatch: 'full' },
-  { path: 'menu', component: MainMenuComponent },
+  { path: 'main-menu', component: MainMenuComponent },
   { path: 'resources', component: ResourcesComponent },
   { path: 'intro', component: IntroComponent},
   ...examples,

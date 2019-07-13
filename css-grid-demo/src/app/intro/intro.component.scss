@@ -1,0 +1,19 @@
+:host {
+    display:grid;
+    height: 100vh;
+    place-items: center;
+    overflow: hidden;
+    text-align: center;
+    // background-image: url(../assets/misc/intro-wall.jpg);
+    background-size: cover;
+}
+
+.title {
+    color: #ffd54e;
+    text-shadow: 0 0 20px black;
+    transform: 
+        translateY(-80px)
+        perspective(100px)
+        rotateX(10deg)
+    ;
+}
