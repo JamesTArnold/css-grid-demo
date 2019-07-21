@@ -9,6 +9,7 @@ import { IntroComponent } from './intro/intro.component';
 import { ResourcesComponent } from './resources/resources.component';
 
 import { examples } from './examples';
+import { ExampleDebuggingComponent } from './example/example-debugging/example-debugging.component';
 
 
 
@@ -23,6 +24,7 @@ import { examples } from './examples';
     ExampleComponent,
     IntroComponent,
     ResourcesComponent,
+    ExampleDebuggingComponent,
 
   ],
   imports: [
