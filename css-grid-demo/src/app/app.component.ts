@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,13 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
-  title = 'css-grid-demo';
-  destination = '/intro';
-  router: any;
+
+  constructor(private router: Router) {}
 
   if (destination) {
     this.router.navigate([destination]);
   }
+
+  @HostListener('window:keydown', ['$event'])
+  KeyEvent( event: KeyboardEvent) {
+
+  let destination = '';
+
+  if ('event.code = Backslash') {
+    destination = '/main-menu';
+  }
+}
   
 }
+
+
