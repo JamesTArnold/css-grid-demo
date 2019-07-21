@@ -1,25 +1,18 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
-import { ExampleBlocksComponent } from './example-blocks.component';
+@Component({
+  selector: 'example-blocks',
+  templateUrl: './example-blocks.component.html',
+  styleUrls: ['./example-blocks.component.css']
+})
+export class ExampleBlocksComponent {
+  static label = 'Playing With Blocks';
 
-describe('ExampleBlocksComponent', () => {
-  let component: ExampleBlocksComponent;
-  let fixture: ComponentFixture<ExampleBlocksComponent>;
+  labels: string[] = [];
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ExampleBlocksComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ExampleBlocksComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  constructor() {
+    for (let i = 1; i < 10; i++) {
+      this.labels.push('' + i);
+    }
+  }
+}

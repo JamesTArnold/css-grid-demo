@@ -9,6 +9,7 @@ import { IntroComponent } from './intro/intro.component';
 import { ResourcesComponent } from './resources/resources.component';
 
 import { examples } from './examples';
+import { ExampleSandboxComponent } from './example-sandbox/example-sandbox.component';
 
 
 
@@ -22,6 +23,7 @@ import { examples } from './examples';
     ExampleComponent,
     IntroComponent,
     ResourcesComponent,
+    ExampleSandboxComponent,
 
   ],
   imports: [
