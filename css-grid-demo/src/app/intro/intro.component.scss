@@ -4,11 +4,12 @@
     place-items: center;
     overflow: hidden;
     text-align: center;
-    // background-image: url(../assets/misc/intro-wall.jpg);
+    background-image: url(/assets/misc/intro-wall.jpg);
     background-size: cover;
 }
 
 .title {
+    font-size: 5rem;
     color: #ffd54e;
     text-shadow: 0 0 20px black;
     transform: 
@@ -16,4 +17,10 @@
         perspective(100px)
         rotateX(10deg)
     ;
+}
+
+a { 
+    background-color: lightgreen;
+    text-decoration: none;
+
 }
