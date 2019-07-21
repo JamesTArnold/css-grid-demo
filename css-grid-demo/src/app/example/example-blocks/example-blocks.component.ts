@@ -5,10 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './example-blocks.component.html',
   styleUrls: ['./example-blocks.component.scss']
 })
-export class ExampleBlocksComponent implements OnInit {
+export class ExampleBlocksComponent {
+  static label = 'Playing With Blocks';
 
-  constructor() { }
+  labels: string[] = [];
 
+  constructor() {
+    for (let i = 1; i < 10; i++) {
+      this.labels.push('' + i);
+    }
+  }
   ngOnInit() {
   }
 
