@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleSandboxComponent implements OnInit {
 
-  constructor() { }
+  static label = 'Sandbox';
+
+ 
 
   ngOnInit() {
   }
